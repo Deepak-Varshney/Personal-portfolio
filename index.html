@@ -319,11 +319,12 @@
                 </div>
             </div>
             <div class="contact-right">
-                <form action="">
-                    <input type="text" required placeholder="Your Name">
-                    <input type="email" required placeholder="Your Email">
-                    <input type="tel" required placeholder="Your Number">
-                    <textarea name="message" required cols="30" rows="4" id="" placeholder="Your Message"></textarea>
+                <form action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="8d176d14-742f-4621-9e5b-7167ace851f6">
+                    <input type="text" name="Name" required placeholder="Your Name">
+                    <input type="email" name="Email" required placeholder="Your Email">
+                    <input type="tel" name="number" required placeholder="Your Number">
+                    <textarea name="message" name="message" required cols="30" rows="4" id="" placeholder="Your Message"></textarea>
                     <button type="submit" class="btn btn-white">Send</button>
                 </form>
             </div>
